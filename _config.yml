@@ -1,0 +1,4 @@
+safe: false
+pygments: true
+permalink: /blog/:year/:month/:day/:title
+exclude: README.textile
