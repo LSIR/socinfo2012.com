@@ -1,3 +1,2 @@
-* Fix the issue with div.page-header and anchor links (padding offset)
 * Use bootstrap-scrollspy.js to update the sidebar entries (with class="active")
 
