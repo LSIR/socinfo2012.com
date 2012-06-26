@@ -51,8 +51,10 @@
             <img src="/img/socinfo-logo-navbar.png" />
           </a>
           <div>
-            <img src="/img/epfl-logo-inverse.png" alt="I&C EPFL"
-            style="float:right;margin-top:4px;margin-left:20px;"/>
+            <a href="http://ic.epfl.ch/">
+              <img src="/img/epfl-logo-inverse.png" alt="I&C EPFL"
+              style="float:right;margin-top:4px;margin-left:20px;"/>
+            </a>
           </div>
           <div class="hidden-phone">
             <p class="navbar-text pull-right">
@@ -87,10 +89,12 @@
               <li><a href="/committee/#steering">Steering Committee</a></li>
               <li><a href="/committee/#program">Program Committee</a></li>
               <li class="divider"></li>
-              <li class="nav-header"><i class="icon-backward"></i>Previous Editions</li>
-              <li><a href="http://www.sis.smu.edu.sg/SocInfo2011/index.html">SocInfo 2011</a></li>
-              <li><a href="http://sieci.pjwstk.edu.pl/SocInfo2010.php/">SocInfo 2010</a></li>
-              <li><a href="http://sieci.pjwstk.edu.pl/socinfo.php">SocInfo 2009</a></li>
+              <li class="nav-header"><a data-toggle="collapse" href="#editions"><i class="icon-backward"></i>Past Editions</a></li>
+              <div id="editions" class="collapse">
+                <li><a href="http://www.sis.smu.edu.sg/SocInfo2011/index.html">SocInfo 2011</a></li>
+                <li><a href="http://sieci.pjwstk.edu.pl/SocInfo2010.php/">SocInfo 2010</a></li>
+                <li><a href="http://sieci.pjwstk.edu.pl/socinfo.php">SocInfo 2009</a></li>
+              </div>
             </ul>
           </div><!--/.well -->
         </div><!--/span2-->
@@ -109,7 +113,7 @@
               new TWTR.Widget({
                 version: 2,
                 type: 'profile',
-                rpp: 6,
+                rpp: 4,
                 interval: 30000,
                 width: 'auto',
                 height: 300,
@@ -134,14 +138,29 @@
               </script>
             </div>
           </div><!--/.span3-->
+
           
         </div><!--/span10-->
       </div><!--/.row-fluid-->
-
+    </div><!--/.container-fluid-->
+    
       <!-- footer -->
-      <hr>
-      <div class="row-fluid footer">
-        <div class="span5">
+      <div class="footer">
+      <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span6">
+          <strong>SPONSORS</strong><br>
+          <a href="http://www.internet-science.eu/">
+            <img src="/img/sponsor/eins.jpg" style="margin-right:10px;"/>
+          </a>
+          <a href="http://www.larc.smu.edu.sg/">
+            <img src="/img/sponsor/larc.png"/>
+        </a>
+        </div>
+        <div class="span4" style="padding-top:18px;">
+          <i class="icon-calendar"></i>
+          Latest revision: {{ site.time | date: "%d %B %Y" }}
+          <br>
           <i class="icon-wrench"></i>
           Built with <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>
             and <a href="http://jekyllrb.com/">Jekyll</a>.
@@ -149,13 +168,9 @@
           <i class="icon-eye-open"></i>
           Source code available on <a href="https://github.com/pirroh/socinfo2012.com">GitHub</a>.         
         </div>
-        <div class="span4">
-          <i class="icon-calendar"></i>
-          Latest revision: {{ site.time | date: "%d %B %Y" }}
-        </div>
-        <div class="span3">
+        <div class="span2" style="padding-top:18px;">
           <!--+1 button-->
-          <g:plusone size="medium" width="200" annotation="inline"></g:plusone>
+          <g:plusone size="medium" width="150" annotation="inline"></g:plusone>
           <br>
           <!--Twitter button-->
           <a href="https://twitter.com/share" class="twitter-share-button" 
@@ -165,12 +180,12 @@
           <br>
           <!--Like button-->
           <div class="fb-like" data-href="http://www.socinfo2012.com" data-send="false"
-              data-layout="button_count" data-width="200" data-show-faces="false">
+              data-layout="button_count" data-width="150" data-show-faces="false">
           </div>
         </div><!--/.span4-->
       </div><!--/.row-fluid-->
-
-    </div><!--/.container-fluid-->
+      </div><!--/.container-fluid-->
+    </div>
 
     <!-- Le javascript
     ================================================== -->
