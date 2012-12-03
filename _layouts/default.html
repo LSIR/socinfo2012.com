@@ -95,10 +95,13 @@
               <li><a href="/location/#venue">Conference Venue</a></li>
               <li><a href="/location/#EPFL">EPFL</a></li>
               <li><a href="/location/#Lausanne">Lausanne</a></li>
-              <li class="nav-header"><i class="icon-briefcase"></i>Committees</li>
-              <li><a href="/committee/#organizing">Organizing Committee</a></li>
-              <li><a href="/committee/#steering">Steering Committee</a></li>
-              <li><a href="/committee/#program">Program Committee</a></li>
+              <li class="divider"></li>
+              <li class="nav-header"><a data-toggles="collapse" href="#committees"><i class="icon-briefcase"></i>Committees</a></li>
+              <div id="committees" class="collapse">
+                <li><a href="/committee/#organizing">Organizing Committee</a></li>
+                <li><a href="/committee/#steering">Steering Committee</a></li>
+                <li><a href="/committee/#program">Program Committee</a></li>
+              </div>
               <li class="divider"></li>
               <li class="nav-header"><a data-toggle="collapse" href="#editions"><i class="icon-backward"></i>Past Editions</a></li>
               <div id="editions" class="collapse">
@@ -118,13 +121,13 @@
           </div>
 
           <div class="span3 visible-desktop">
-            <div class="twitter">
+            <div class="twitter" style="z-index:100;">
               <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
               <script>
               new TWTR.Widget({
                 version: 2,
                 type: 'profile',
-                rpp: 4,
+                rpp: 5,
                 interval: 30000,
                 width: 'auto',
                 height: 300,
@@ -160,7 +163,6 @@
       <div class="container-fluid">
       <div class="row-fluid">
         <div class="span6">
-          <strong>SPONSORS</strong><br>
           <a href="http://www.internet-science.eu/">
             <img src="/img/sponsor/eins.jpg" style="margin-right:10px;"/>
           </a>
