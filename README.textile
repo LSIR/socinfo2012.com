@@ -1,1 +1,1 @@
-h2. "SocInfo 2012 website":http://www.socinfo2012.com
+h2. "SocInfo 2012 website":http://lsir.github.io/socinfo2012.com/
